@@ -24,7 +24,7 @@ Python script that uses Kaggle's credit card transaction dataset to detect futur
 
 ## Support ## 
 
-If you find any of my projects helpful/inspiring and would like to support me, please do so [here](www.venmo.com/Micah-Yong)!
+If you find any of my projects helpful/inspiring and would like to support me, please do so [here](https://venmo.com/Micah-Yong "Venmo")
 Feel free to raise issues or suggest improvements. My email is micahtyong@berkeley.com!
 
 
