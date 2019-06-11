@@ -1,6 +1,6 @@
 # CreditCardFraudDetector
 Python script that uses Kaggle's credit card transaction dataset to detect future fraudulent credit card transactions.
-<img src = "Demo/Landing.png" width = "400">
+<img src = "Demo/Landing.png" width = "200">
 
 # Technology
 
@@ -12,8 +12,8 @@ Python script that uses Kaggle's credit card transaction dataset to detect futur
 
 # Demo # 
 
-<img src = "Demo/Positive.png" width = "400">
-<img src = "Demo/Negative.png" width = "400">
+<img src = "Demo/Positive.png" width = "200">
+<img src = "Demo/Negative.png" width = "200">
 
 ## Installation ## 
 
