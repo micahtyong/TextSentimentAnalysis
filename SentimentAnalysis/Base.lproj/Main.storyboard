@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SentimentAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter text here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WIh-r1-UuN">
+                                <rect key="frame" x="20.5" y="187" width="373" height="625"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sentiment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="459-BK-08n">
+                                <rect key="frame" x="130" y="94" width="154" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzx-wX-Tvd">
+                                <rect key="frame" x="106.5" y="820" width="201" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Analyze Sentiment"/>
+                                <connections>
+                                    <action selector="analyzeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHe-SJ-GEb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WIh-r1-UuN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9RY-ki-Yr6"/>
+                            <constraint firstItem="459-BK-08n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="HFL-oZ-OgJ"/>
+                            <constraint firstItem="wzx-wX-Tvd" firstAttribute="top" secondItem="WIh-r1-UuN" secondAttribute="bottom" constant="8" symbolic="YES" id="KI8-yk-nLk"/>
+                            <constraint firstItem="459-BK-08n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L9J-L1-6oP"/>
+                            <constraint firstItem="WIh-r1-UuN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="QY7-ba-nUf"/>
+                            <constraint firstItem="WIh-r1-UuN" firstAttribute="top" secondItem="459-BK-08n" secondAttribute="bottom" constant="50" id="Sa9-xX-lV9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wzx-wX-Tvd" secondAttribute="bottom" id="UB3-zw-dia"/>
+                            <constraint firstItem="wzx-wX-Tvd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vnJ-F9-rod"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="WIh-r1-UuN" id="fza-lP-VxS"/>
+                        <outlet property="sentimentLabel" destination="459-BK-08n" id="4Qp-8G-5a2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+</document>
