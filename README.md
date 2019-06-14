@@ -1,5 +1,5 @@
-# CreditCardFraudDetector
-Python script that uses Kaggle's credit card transaction dataset to detect future fraudulent credit card transactions.
+# Basic Sentiment Analysis
+Utilizes a custom built Sentiment Analysis CoreML model to determine whether input text shows positive sentiment or negative sentiment.
 
 <img src = "Demo/Landing.png" width = "200">
 
